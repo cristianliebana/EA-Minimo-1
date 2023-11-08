@@ -5,6 +5,7 @@ import { IUser } from '../models/User';
 import { IProduct } from '../models/Product';
 import { IPurchase } from '../models/Purchase';
 import mongoose from 'mongoose';
+import { IDenuncia } from '../models/Denuncia';
 
 export const ValidateSchema = (schema: ObjectSchema) => {
     return async (req: Request, res: Response, next: NextFunction) => {
@@ -60,4 +61,19 @@ export const Schemas = {
         }),
 
     }
+/*     denuncia: {
+        create: Joi.object<IDenuncia>({
+            userId: Joi.string().required(),
+            stars: Joi.number().integer().min(1),
+            productId: Joi.string().required(),
+            description: Joi.string().required(),
+        }),
+        update: Joi.object<IDenuncia>({
+            userId: Joi.string().required(),
+            stars: Joi.number().integer().min(1),
+            productId: Joi.string().required(),
+            description: Joi.string().required(),
+        }),
+
+    } */
 };

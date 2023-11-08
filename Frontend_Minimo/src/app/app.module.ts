@@ -15,6 +15,8 @@ import {PurchaseComponent} from './components/purchase/purchase.component';
 import { PurchaseDetailComponent } from './components/purchase-detail/purchase-detail.component';
 import { PurchaseNotificationComponent } from './components/notifications/purchase-notification/purchase-notification.component';
 import { PurchaseFailureNotificationComponent } from './components/notifications/purchase-failure-notification/purchase-failure-notification.component';
+import { DenunciaComponent } from './components/denuncia/denuncia.component';
+import { DenunciaDetailComponent } from './components/denuncia-detail/denuncia-detail.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { PurchaseFailureNotificationComponent } from './components/notifications
     PurchaseComponent,
     PurchaseDetailComponent,
     PurchaseNotificationComponent,
-    PurchaseFailureNotificationComponent
+    PurchaseFailureNotificationComponent,
+    DenunciaComponent,
+    DenunciaDetailComponent
   ],
   imports: [
     BrowserModule,

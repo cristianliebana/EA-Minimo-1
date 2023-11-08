@@ -6,6 +6,7 @@ import Logging from './library/Logging';
 import productRoutes from './routes/Product';
 import userRoutes from './routes/User';
 import purchaseRoutes from './routes/Purchase'
+import denunciaRoutes from './routes/Denuncia'
 import cors from 'cors';
 
 const router = express();
@@ -45,7 +46,8 @@ const StartServer = () => {
     /** Routes */
     router.use('/users', userRoutes);
     router.use('/products', productRoutes);
-    router.use('/purchases', purchaseRoutes)
+    router.use('/purchases', purchaseRoutes);
+    router.use('/denuncias', denunciaRoutes);
 
     /** Healthcheck */
     router.get('/ping', (req, res, next) => res.status(200).json({ message: 'pong' }));
